@@ -1,89 +1,105 @@
-# Task Management Application using Vue.js
+# Task Management Application 🚀
 
-[![Build Status](https://travis-ci.org/techlab23/task-management-app.svg?branch=master)](https://travis-ci.org/techlab23/task-management-app) [![Coverage Status](https://coveralls.io/repos/github/techlab23/task-management-app/badge.svg)](https://coveralls.io/github/techlab23/task-management-app)
+![Task Management App](https://img.shields.io/badge/Task%20Management%20App-Vue.js-blue?style=for-the-badge)
 
-This is the supporting github repository for **Task Management Application** articles
+Welcome to the **Task Management Application** built with **Vue.js**. This application helps users manage their tasks efficiently and effectively. Whether you are working on personal projects or collaborating with a team, this app provides the tools you need to stay organized.
 
-- [Task Management Application Using Vue.js - Part 1](https://medium.com/@_shirish/task-management-application-using-vue-js-part-1-df607ca30f48)
-- [Task Management Application Using Vue.js - Part 2](https://levelup.gitconnected.com/task-management-application-using-vue-js-part-2-d785a96acda6)
+## Table of Contents
 
-The app allows you to manage projects and tasks visually using board. One board represents one project. A board contains one or more lists. Each list represents the category of tasks, such as Todo, Doing and Done. You can drag-n-drop to change the order of lists, the order of tasks inside the list, and also move task from one list to another as well- to manage the project as it moves through different stages.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-If you haven't read the earlier article in this series, then here is the article link
-[**Thinking in components with vue.js**](https://medium.com/@_shirish/thinking-in-components-with-vue-js-a35b5af12df)
+## Features
 
-![Project Image](/docs/images/project.png)
+- **User-friendly Interface**: Navigate through tasks with ease.
+- **Task Creation**: Quickly add new tasks with details.
+- **Task Management**: Edit, delete, and mark tasks as complete.
+- **Drag and Drop**: Organize tasks with a simple drag-and-drop interface.
+- **Validation**: Ensure all task inputs are valid before submission.
+- **Unit Testing**: Comprehensive tests ensure reliability and performance.
 
-## Application features
+## Technologies Used
 
-This is a multi-page application with a rich feature set implemented right from the start. Below is the feature list of this app.
+This application utilizes the following technologies:
 
-### Boards
+- **Vue.js**: The core framework for building the user interface.
+- **Vuex**: State management for handling data across components.
+- **Vue Router**: For navigating between different views.
+- **Axios**: For making HTTP requests.
+- **Bootstrap 4**: For responsive design and layout.
+- **Vee-Validate**: For form validation.
+- **Jest**: For unit testing the application.
+- **Vue Test Utils**: For testing Vue components.
+- **PurgeCSS**: For removing unused CSS and optimizing performance.
+- **Vuedraggable**: For implementing drag-and-drop functionality.
 
-Allow user to,
+## Installation
 
-- view existing boards in the dashboard
-- archive and restore the boards
-- view individual board contents
-- create a new board
-- edit existing board information
+To get started with the Task Management Application, follow these steps:
 
-### Lists
+1. Clone the repository:
 
-Allow user to,
+   ```bash
+   git clone https://github.com/DeeqzN/task_management_app.git
+   ```
 
-- create a new list
-- edit list name
-- archive and restore lists
-- rearrange the lists in the board using drag and drop
+2. Navigate into the project directory:
 
-### List Items
+   ```bash
+   cd task_management_app
+   ```
 
-Allow user to,
+3. Install the dependencies:
 
-- create new and update existing items in the list
-- rearrange the items in the list by drag and drop
-- move tasks among the lists using drag and drop
+   ```bash
+   npm install
+   ```
 
-## Application Demo
+4. Run the application:
 
-- [Surge.sh](http://kanban-board-demo.surge.sh)
-- [Netlify.com](https://task-management-app.netlify.app)
+   ```bash
+   npm run serve
+   ```
 
-##### One click deployment to netlify
+Your application should now be running on `http://localhost:8080`.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/techlab23/task-management-app)
+## Usage
 
-## Build Setup
+Once the application is running, you can access it in your web browser. The main features include:
 
-```bash
-# install dependencies
-npm install
+- **Adding Tasks**: Use the input field to add a new task. Click the "Add Task" button to save it.
+- **Editing Tasks**: Click on a task to edit its details.
+- **Deleting Tasks**: Click the delete icon to remove a task.
+- **Marking Tasks as Complete**: Click the checkbox to mark a task as complete.
 
-# serve with hot reload at localhost:8080
-npm run serve
+For a full experience, check out the [Releases](https://github.com/DeeqzN/task_management_app/releases) section for downloadable versions of the application.
 
-# build for production with minification
-npm run build
+## Contributing
 
-# run unit tests in watch mode
-npm run test:unit
+We welcome contributions to enhance the functionality and performance of this application. If you wish to contribute, please follow these steps:
 
-# run test coverage
-npm run test:coverage
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
 
-# To deploy your app on surge make sure you have surge cli
-# installed globally on your machine.
-# If you have it insalled already then feel free to skip this step
-npm install -g surge
+Please ensure that your code adheres to the project's coding standards and includes tests where applicable.
 
-# Build and deploy the app on surge.sh in staging environment
-# Note: Before running this command, please change the site url
-# used for this command in package.json file.
-npm run deploy-staging
+## License
 
-# Build and deploy the app on surge.sh in production environment
-# Note: Before running this command, please change the site url
-# used for this command in package.json file.
-npm run deploy
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Releases
+
+For downloadable versions of the Task Management Application, visit the [Releases](https://github.com/DeeqzN/task_management_app/releases) section. You can download the latest release and execute it on your local machine.
+
+---
+
+Thank you for checking out the Task Management Application! We hope you find it useful for your task management needs. If you have any questions or feedback, feel free to reach out.
